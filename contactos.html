@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ganadería Los Encinos</title>
+    <style>
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .comp ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .comp ul li {
+            margin: 0 10px;
+        }
+        .comp ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .comp ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+            transform: scale(1.1);
+        }
+        .section {
+            padding: 80px 20px 20px; 
+            margin: 20px;
+            border: 1px solid #ddd;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        .contact {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact img {
+            border-radius: 50%;
+            width: 100px;
+            heidth: 100px;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+        .contact:hover img {
+            transform: scale(1.2);
+        }
+        .contact  p {
+            color: #000000;
+            transition: color 0.3s;
+        }
+        .contact:hover  p {
+            color: #007BFF;
+        }
+        .buttonlink img {
+            height: 50px;
+            width: 50px;
+            border-radius: 10%;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+        .buttonlink:hover img {
+            transform: scale(1.2);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 37px 0px;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .gmail {
+            padding: 0px 48px;
+        }
+        .gmail img {
+            height: 50px;
+            width: 50px;
+            border-radius: 10%;
+            margin: 0px;
+            transition: transform 0.3s;
+        }
+        .gmail:hover img {
+            transform: scale(1.2);
+        }
+        .navegacion {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navegacion ul {
+            list-style: none;
+        }
+        .lanav a {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+        .menu > li {
+            position: relative;
+        }
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+        .menu  li  a {
+            display: block;
+            padding: 15px 50px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .navegacion ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+            transform: scale(1.1);
+        }
+        .submenu {
+            position: absolute;
+            background-color: #333;
+            right: 50px;
+            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            border-radius: 10%;
+            transition: 0.5s;
+        }
+        .submenu li a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+        }
+        .menu li:hover .submenu{
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="movil">
+        <nav class="navegacion">
+            <ul><li><div class="lanav"><a href="index.html">Ganadería Los Encinos</a></div></li></ul> 
+            <ul class="menu"><li><a href="#">///</a>
+                <ul class="submenu">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="conócenos.html">Conócenos</a></li>
+                    <li><a href="productos.html">Servicios y Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </li></ul>
+        </nav>
+    </header>
+    <header class="desktop">
+        <nav class="comp">
+            <ul><li><div class="logo"><a href="index.html">Ganadería Los Encinos</a></div></li></ul>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="conócenos.html">Conócenos</a></li>
+                    <li><a href="productos.html">Servicios y Productos</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h1>Contactos</h1>
+        <div class="contact">
+            <img src="imagenes/imgus.jpg" alt="Foto de Contacto 1">
+            <p>Nombre: Gustavo Ortíz<br>
+            Teléfono: 0985-792162<br>
+            Instagram: manu.or7</p>
+        </div>
+        <div class="buttonlink">
+            <a href="https://www.instagram.com/manu.or7">
+                <img src="imagenes/instagramlogo.jpg" alt="Foto de Contacto 1"></a>
+            <a href="https://wa.me/+595985792162">
+                <img src="imagenes/whatsapplogo.jpg" alt="Foto de Contacto 1"></a>
+        </div>
+        <div class="contact">
+            <img src="imagenes/imgvic.jpg" alt="Foto de Contacto 2">
+            <p>Nombre: Victor Melgarejo<br>
+            Teléfono: 0971-910302<br>
+            Instagram: _vtms_</p>
+        </div>
+        <div class="buttonlink">
+            <a href="https://www.instagram.com/_vtms_">
+                <img src="imagenes/instagramlogo.jpg" alt="Foto de Contacto 2"></a>
+            <a href="https://wa.me/+595971910302">
+                <img src="imagenes/whatsapplogo.jpg" alt="Foto de Contacto 2"></a>
+        </div>
+    </section>
+    <footer> 
+        <a href="https://youtu.be/1NyvidacIXs?si=xRXaMhq1z2uTZ5P4">Copyright ©2024 Los Encinos Todos los derechos reservados</a>
+        <div class="gmail"><a href="mailto:gustavoemanuelortizmendez@gmail.com">
+            <img src="imagenes/gmail6.png">
+        </a></div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
